@@ -36,19 +36,20 @@ function track {
                 echo "No argument provided."
         fi
 }
-## This stupid old joke should not be allowed to die.
+
+## A stupid joke that should not be allowed to die
 alias wow="git status"
 alias such="git"
 alias very="git"
 
-# Defaults for common commands
+# ls defaults
 alias ls="ls -1ApG"
 alias ll="ls -lh"
 
-# Shortcut to modify this bash_profile
+# Modify this bash_profile
 alias bashconfig="vim ~/.bash_profile && source ~/.bash_profile"
 
-# Shortcuts for environment ops
+# Docker-compose ops
 alias dockc="docker-compose"
 alias cacheflush="docker-compose restart memcached"
 
