@@ -15,3 +15,6 @@ ln -s $temp/.bash_profile ~/.bash_profile
 # Source .bash_profile during new sessions
 echo "source ~/.bash_profile" >> ~/.bashrc
 
+# Reload .bashrc to source our commands
+source ~/.bashrc
+
