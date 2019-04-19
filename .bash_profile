@@ -9,12 +9,6 @@ reset=$(tput sgr0)
 ### BEGIN SHORTCUTS ###
 #
 
-# Workspace navigation shortcuts
-alias jump-ba="cd ~/workspace/blog-api/wordpress/wp-content/"
-alias jump-br="cd ~/workspace/blog-react/"
-alias jump-na="cd ~/workspace/newsroom-api/wordpress/wp-content/"
-alias jump-nr="cd ~/workspace/newsroom-react/"
-
 # Git shortcuts
 alias diff="git diff"
 alias pull="git pull"
