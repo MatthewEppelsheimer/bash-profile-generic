@@ -5,28 +5,14 @@
 red=$(tput setaf 1)
 reset=$(tput sgr0)
 
+
 #
 ### BEGIN SHORTCUTS ###
 #
 
 # Git shortcuts
-alias diff="git diff"
-alias pull="git pull"
-alias push="git push"
-alias checkout="git checkout"
-alias sync="git pull && git push"
-alias add="git add --interactive"
-alias fixup="git stash && git rebase -i HEAD~2"
-alias stash="git stash"
-alias log="git log"
-alias reset="git reset"
-alias commit="git commit"
-alias branch="git branch"
-alias merge="git merge"
-alias show="git show"
-alias reset="git reset"
-alias rebase="git rebase"
-alias fetch="git fetch"
+alias g="git"
+
 # `track some/branch` becomes `git checkout --track origin/some/branch`
 function track {
         if ! [ -z "$1" ];
@@ -56,6 +42,14 @@ alias cacheflush="docker-compose restart memcached"
 #
 ### END SHORTCUTS ###
 #
+
+#
+### ADD TOOLS ###
+#
+
+# Git completion, made aware of our `g` alias
+source ~/.git-completion.bash
+__git_complete g __git_main
 
 #
 ### CUSTOM OUTPUT
