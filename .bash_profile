@@ -13,6 +13,13 @@ reset=$(tput sgr0)
 # Git shortcuts
 alias g="git"
 
+alias commit="git commit"
+alias pull="git pull"
+alias push="git push"
+
+alias add="git add -i"
+alias sync="git pull && git push"
+
 # `track some/branch` becomes `git checkout --track origin/some/branch`
 function track {
         if ! [ -z "$1" ];
