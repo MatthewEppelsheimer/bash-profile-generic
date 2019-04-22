@@ -20,6 +20,8 @@ alias push="git push"
 alias add="git add -i"
 alias sync="git pull && git push"
 
+alias fixup="git stash && git rebase -i HEAD~2"
+
 # `track some/branch` becomes `git checkout --track origin/some/branch`
 function track {
         if ! [ -z "$1" ];
