@@ -13,7 +13,10 @@ reset=$(tput sgr0)
 # Git shortcuts
 alias g="git"
 
+alias branch="git branch"
+alias checkout="git checkout"
 alias commit="git commit"
+alias diff="git diff"
 alias pull="git pull"
 alias push="git push"
 
