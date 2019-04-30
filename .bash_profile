@@ -21,6 +21,7 @@ alias fetch="git fetch"
 alias merge="git merge"
 alias pull="git pull"
 alias push="git push"
+alias stash="git stash"
 
 alias add="git add -i"
 alias sync="git pull && git push"
